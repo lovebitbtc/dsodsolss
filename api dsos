@@ -1,0 +1,43 @@
+import com.sun.content.server.content.*; 
+import com.sun.content.server.billing.BillingInfo; 
+ 
+public class ContentManagerImpl implements ContentManager 
+{ 
+  public ContentInfo getContentInfo( 
+    ContentInfo inContentInfo, 
+    BillingInfo inBillingInfo) 
+  throws ContentException 
+  { 
+    // Update the information that is shown to the user 
+    return inContentInfo; 
+  } 
+ 
+  public ContentInfo[] getContentInfos( 
+    ContentInfo[] inContentInfos, 
+    BillingInfo[] inBillingInfos) 
+  throws ContentException 
+  { 
+    // Iterate through each ContentInfo object and update the 
+    // information that is shown to the user when a list of 
+    // content is shown. 
+    return inContentInfos; 
+  } 
+ 
+  public ContentInfo getContentDescriptor( 
+    ContentInfo inContentInfo, 
+    BillingInfo inBillingInfo) 
+  throws ContentException 
+  { 
+    // Update content download descriptor 
+    return inContentInfo; 
+  } 
+ 
+  public ContentInfo getContentBinary( 
+    ContentInfo inContentInfo, 
+    BillingInfo inBillingInfo) 
+  throws ContentException 
+  { 
+    // Update content binary, binary MIME type 
+    return inContentInfo; 
+  } 
+} 
